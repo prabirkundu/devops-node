@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname + '/')))
 io.on('connection', socket => {
     console.log('Some client connected')
     io.emit('test', {name:"test"})
-})   
+})    
 
 server.listen(port, () => {
   console.log(`Server running on port: ${port}`)
